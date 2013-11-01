@@ -67,7 +67,7 @@ Listening on 0.0.0.0:3000, CTRL+C to stop
 
 Write a simple API endpoint that runs a query string against the [Google Geocoding API](https://developers.google.com/maps/documentation/geocoding/) to return a list of suggested cities.
 
-- Requests must be authenticated against username and hashed password combinations stored in a Redis database using http basic auth.
+- Requests must be authenticated against username and password using http basic auth.
 - All functional tests should pass (additional tests may be implemented as necessary).
 - The final application should be [deployed to Heroku](https://devcenter.heroku.com/articles/rack).
 
