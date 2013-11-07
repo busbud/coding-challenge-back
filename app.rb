@@ -4,8 +4,6 @@ require 'sinatra'
 require 'json'
 require 'uri'
 require 'net/http'
-require 'sinatra/basic_auth'
-require 'sinatra/simple_auth'
 
 
 
@@ -13,22 +11,8 @@ require 'sinatra/simple_auth'
 class App < Sinatra::Base
     @@google_base_url = "http://maps.googleapis.com/maps/api/geocode/json?sensor=false&address="
 
-	# example from sinatra simple authentication
-	def authorized?
-		@auth ||=  Rack::Auth::Basic::Request.new(request.env)
-		@auth.provided? && @auth.basic? && @auth.credentials && @auth.credentials == ["CUSTOM_USERNAME","SECRET_PASSWORD"]
-	end
-
-	# example from sinatra simple authentication
-	def protected!
-		unless authorized?
-		response['WWW-Authenticate'] = %(Basic realm="Restricted Area")
-		throw(:halt, [401, "Oops... we need your login name & password\n"])
-		end
-	end
+		
 	
-	
-	#------------------------------------------------------------------------
 	# basic authentication
 	def authenticate(user,pass)
 		return user=="Busbud" && pass=="password123"
