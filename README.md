@@ -1,6 +1,6 @@
 # Busbud Coding Challenge 
-[![CircleCI Status Badge](https://circleci.com/gh/cdnbacon/coding-challenge-back.png?circle-token=db562af89d5bdcc0a719e737e181cee95cd43f87)](circleci)
-
+[![CircleCI](https://circleci.com/gh/cdnbacon/coding-challenge-back.png?circle-token=db562af89d5bdcc0a719e737e181cee95cd43f87)](circleci)
+[![Code climate](https://codeclimate.com/github/cdnbacon/coding-challenge-back.png)](codecliamte)
 
 ## Getting Started
 
