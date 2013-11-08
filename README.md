@@ -1,4 +1,6 @@
-# Busbud Coding Challenge
+# Busbud Coding Challenge 
+[![CircleCI Status Badge](https://circleci.com/gh/cdnbacon/coding-challenge-back.png?circle-token=db562af89d5bdcc0a719e737e181cee95cd43f87)](circleci)
+
 
 ## Getting Started
 
