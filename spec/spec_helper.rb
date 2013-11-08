@@ -3,6 +3,12 @@ ENV['RACK_ENV'] = 'test'
 require 'rspec'
 require 'rack/test'
 require 'json'
+require 'coveralls'
+
+# Code coverage, see https://coveralls.io/docs/ruby
+# Note: The Coveralls.wear! must occur before any of your application code is required,
+# so should be at the very top of your spec_helper.rb, test_helper.rb, or env.rb, etc.
+Coveralls.wear!
 
 require_relative '../app'
 
